@@ -22,9 +22,12 @@
     />
 
     <!-- Google Font -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
 
     <!-- CSS File -->
     <link rel="stylesheet" href="./public/styles/ex-style.css" />
@@ -41,7 +44,9 @@
               <a class="nav-link" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item dropbtn">
-              <a class="nav-link dropdown" aria-current="page" href="#">Packages <i class="fa fa-caret-down"></i></a>
+              <a class="nav-link dropdown" aria-current="page" href="#"
+                >Packages <i class="fa fa-caret-down"></i
+              ></a>
               <div class="dropdown-content">
                 <a href="#">Link 1</a>
                 <a href="#">Link 2</a>
@@ -66,7 +71,10 @@
           </ul>
         </div>
       </div>
-      <div class="big-head">Travel <br><span class="bh">far enough</span><br> You meet <br><span class="bh">yourself</span></div>
+      <div class="big-head">
+        Travel <br /><span class="bh">far enough</span><br />
+        You meet <br /><span class="bh">yourself</span>
+      </div>
       <div class="button-div"><button>ENQUIRY</button></div>
     </header>
 
@@ -81,7 +89,10 @@
           <h2>Kerala Honeymoon Packages</h2>
           <h3>(04 Nights / 05 Days)</h3>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit voluptatum quae, quisquam quasi minus ipsa inventore atque assumenda commodi doloribus similique alias maiores minima asperiores ab saepe obcaecati ipsum sit?
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit
+            voluptatum quae, quisquam quasi minus ipsa inventore atque assumenda
+            commodi doloribus similique alias maiores minima asperiores ab saepe
+            obcaecati ipsum sit?
           </p>
           <button>BOOK NOW</button>
         </div>
@@ -140,8 +151,8 @@
         <div>
           <!-- <img src="https://redscarabtravelandmedia.files.wordpress.com/2012/05/aranmula-snakeboatrace2.jpg" alt="" /> -->
         </div>
-      <h1>KERALA BOAT RACE</h1>
-      <button>More Details</button>
+        <h1>KERALA BOAT RACE</h1>
+        <button>More Details</button>
       </div>
       <div class="sc-con">
         <div class="special-div">
@@ -234,36 +245,24 @@
       <h4>we will make your dreams come true</h4>
       <div class="prem-div">
         <div class="prem-item">
-          <img
-            src="./public/images/motorbike-rider.png"
-            alt=""
-          />
+          <img src="./public/images/motorbike-rider.png" alt="" />
           <h3>FREE BIKE RIDE</h3>
           <a href="" target="_blank" rel="noopener noreferrer">Learn More</a>
         </div>
         <div class="prem-item">
-          <img
-            src="./public/images/camp-fire.jpg"
-            alt=""
-          />
+          <img src="./public/images/camp-fire.jpg" alt="" />
           <h3>CAMPFIRE</h3>
           <a href="" target="_blank" rel="noopener noreferrer">Learn More</a>
         </div>
         <div class="prem-item">
-          <img
-            src="./public/images/call-center.jpg"
-            alt=""
-          />
+          <img src="./public/images/call-center.jpg" alt="" />
           <h3>24X7 SUPPORT</h3>
           <a href="http://" target="_blank" rel="noopener noreferrer"
             >Learn More</a
           >
         </div>
         <div class="prem-item">
-          <img
-            src="./public/images/tour-guide.jpg"
-            alt=""
-          />
+          <img src="./public/images/tour-guide.jpg" alt="" />
           <h3>TOUR GUIDE</h3>
           <a href="http://" target="_blank" rel="noopener noreferrer"
             >Learn More</a
@@ -354,10 +353,32 @@
         </div>
       </div>
       <div class="explore">
-        <img src="./public/images/explore.png" alt="">
+        <img src="./public/images/explore.png" alt="" />
         <h4>Explore the World</h4>
       </div>
     </footer>
     <p>© Travel Guide 2024 | Developed by Ajith K. S.</p>
+    <script>
+      /* Get the current screen width in pixels
+      var screenWidth = window.innerWidth;
+      Set the CSS variable value to the screen width
+      document.documentElement.style.setProperty('--screen-width', screenWidth + 'px'); */
+
+      // Function to update font size based on screen width
+      function updateFontSize() {
+        var screenWidth = window.innerWidth;
+        var calculatedFontSize = (58 * screenWidth) / 1326; // Calculate the font size
+        document.documentElement.style.setProperty(
+          "--calculated-font-size",
+          calculatedFontSize + "px"
+        ); // Update CSS variable
+      }
+
+      // Call the function initially
+      updateFontSize();
+
+      // Update font size whenever the window is resized
+      window.addEventListener("resize", updateFontSize);
+    </script>
   </body>
 </html>

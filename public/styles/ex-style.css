@@ -1,3 +1,7 @@
+/* :root {
+  --default-font-size: 58px;
+}*/
+
 * {
   padding: 0px;
   margin: 0px;
@@ -26,6 +30,10 @@ section {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
 
 body > header > div.head > div.head-left > h1 {
@@ -123,22 +131,18 @@ body > header > div.head > div.head-left > h1 > span {
   background-color: #3e8e41;
 } */
 
-.head {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
 .big-head {
   position: absolute;
   bottom: 2%;
   right: 20%;
-  top: 20%;
+  /* top: 20%; */
+  height: auto;
   color: white;
   font-family: "Open Sans", sans-serif;
   font-weight: 800;
-  font-size: 58px;
+  /* font-size: 58px; */
+  /* font-size: calc((58px * 600px) / 1326px); */
+  font-size: var(--calculated-font-size, 58px); /* Default font size */
   width: 300px;
   text-align: center;
 }

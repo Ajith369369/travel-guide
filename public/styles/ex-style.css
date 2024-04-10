@@ -321,12 +321,22 @@ h1 {
 }
 
 .special-div {
-  width: 45%;
+  width: 600px;
+  height: 450px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.special-div div {
+  width: auto;
+  height: auto;
 }
 
 .c-div {
-  width: 500px;
-  height: 350px;
+  width: 600px;
+  height: 400px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -350,7 +360,7 @@ h1 {
 }
 
 #special > div > div.c-div > div.c2 > img:nth-child(2) {
-  height: 220px;
+  height: 260px;
 }
 
 .c1 > img,
